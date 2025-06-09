@@ -1,0 +1,7 @@
+{
+  "authToken": " MODBOT_USE_ENV",
+  "database": {
+    "host": "render",
+    "password": "password"
+  }
+}
