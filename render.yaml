@@ -1,0 +1,18 @@
+# Exported from Render on 2025-06-09T12:16:24Z
+services:
+- type: web
+  name: T2D Automation Custom Stayus
+  runtime: node
+  repo: https://github.com/kingofficerbots/customstatus
+  plan: free
+  envVars:
+  - key: TOKEN
+    sync: false
+  region: oregon
+  buildCommand: npm install
+  startCommand: node index.js
+  domains:
+  - kingofficerbots.gitbook.io
+  - www.kingofficerbots.gitbook.io
+  autoDeployTrigger: commit
+version: "1"
